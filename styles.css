@@ -26,6 +26,7 @@ img {
     align-items: center;
     justify-content: center;
     flex-wrap:wrap;
+    gap: 100px;
 }
 
 .container-header,
@@ -37,20 +38,23 @@ img {
 
 .left-block {
     display: flex;
-    width: 30%;
+    width: 40%;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     height:auto;
+    flex: 1 1 150px;
 
 }
 
 .right-block {
-    width:70%;
+    width:80%;
     display:flex;
     flex-direction: column;
     align-items:flex-start;
     justify-content:flex-start;
+    flex: 3 1 600px;
+    gap:20px;
 }
 
 .profile-user-settings {
@@ -78,7 +82,7 @@ li{
 }
 
 #logo {
-    width: 200px;
+    width: 250px;
 }
 
 #profile {
