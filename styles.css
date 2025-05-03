@@ -90,6 +90,7 @@ li{
 .gallery {
     display:grid;
     grid-template-columns: repeat(3,1fr);
+    grid-template-columns: auto-fit,minmax(140px,1fr);
     gap: 5px;
     width: 100%;
     max-width: 900px;
@@ -133,10 +134,10 @@ li{
     align-items: center;
     gap: 20px;
     opacity: 0;
-   transition: opacity 0.3s ease;
-   color: white;
-   font-size: 20px;
-   flex-direction: column;
+    transition: opacity 0.3s ease;
+    color: white;
+    font-size: 20px;
+    flex-direction: column;
 }
 
 .gallery-item:hover .gallery-item-info,
@@ -150,7 +151,13 @@ li{
     display:flex;}
 
 .gallery-item-info i,
-.gallery-item-type i {margin-right:8px;}
+.gallery-item-type i {
+    margin-right:8px;
+    border-radius: none;
+    border-color: #fafafa;
+}
+
+
 
 
 
